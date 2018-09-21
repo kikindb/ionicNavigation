@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar color="purple">
+    <ion-title>Modal Page</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h1>Welcome to a Modal</h1>
+  <h3>Name: {{person[0].name}}</h3>
+  <h3>Age: {{person[0].age}}</h3>
+
+  <button ion-button block color="primary" (click)="closeWithParamaters()">Close w/Pars</button>
+  <button ion-button block color="purple" (click)="closeWithOutParamaters()">Close</button>
+
+</ion-content>

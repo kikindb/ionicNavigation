@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Main Page</ion-title>
+    <ion-buttons>
+        <button ion-button icon-only (click)="showMenu()">
+            <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h1>Main Page</h1>
+  <button ion-button color="primary" block (click)="navigatePage()">Go to Page 2</button>
+  <button ion-button color="secondary" block [navPush]="page2">Go to Page 2</button>
+</ion-content>
